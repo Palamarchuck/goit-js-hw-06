@@ -20,7 +20,7 @@ galleryList.style.marginTop = "50px";
 
 
 const galleryImages = images.map((image)=>
-`<li class="list-item"><img src = ${image.url} alt = ${image.alt} width = '320'></li>
+`<li class="list-item"><img src = ${image.url} alt = '${image.alt}' width = '320'></li>
 `).join("");
 
 galleryList.insertAdjacentHTML("beforeend", galleryImages); 
